@@ -1,13 +1,14 @@
 percentage = float(input("Enter the percentage: "))
-if percentage < 0 or percentage > 100:
+roundedPercentage = round(percentage)
+if roundedPercentage < 0 or roundedPercentage > 100:
     print("Please enter the number between 0 and 100 (included)")
-elif percentage < 40:
+elif roundedPercentage < 40:
     print("Fail")
-elif percentage < 50:
+elif roundedPercentage < 50:
     print("Pass")
-elif percentage < 60:
+elif roundedPercentage < 60:
     print("Merit 1")
-elif percentage < 70:
+elif roundedPercentage < 70:
     print("Merit 2")
-elif percentage < 80:
+elif roundedPercentage < 80:
     print("Distinctive")
