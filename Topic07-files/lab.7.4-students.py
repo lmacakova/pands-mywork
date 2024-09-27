@@ -50,7 +50,7 @@ print("students saved")
      
 def doLoad:
     with open(FILENAME) as f:
-    return json.load(f)
+        return json.load(f)
 students = doLoad() 
 
 
